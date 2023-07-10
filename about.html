@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lemon Tree Dating App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    p {
+      line-height: 1.5;
+    }
+    
+    #download-button {
+      display: inline-block;
+      background-color: #FF6347;
+      color: #fff;
+      font-size: 14px;
+      padding: 8px 16px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    
+    #download-button:hover {
+      background-color: #E5492D;
+    }
+
+    #download-button img {
+      vertical-align: middle;
+      margin-left: 4px;
+      max-width: 80px; 
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Lemon Tree Dating App</h1>
+  </header>
+
+  <div class="container">
+    <h2>About Lemon Tree</h2>
+    <p>
+      Lemon Tree is a modern dating app designed to connect individuals who share common interests and values. 
+      Our platform provides a seamless and enjoyable experience, allowing you to meet new people and build meaningful connections.
+    </p>
+    <p>
+      With Lemon Tree, you can:
+    </p>
+    <ul>
+      <li>Discover and connect with like-minded individuals</li>
+      <li>Swipe through profiles to find potential matches</li>
+      <li>Chat and communicate with your matches</li>
+      <li>Explore exciting date ideas and activities</li>
+    </ul>
+
+    <h2>Download Lemon Tree</h2>
+    <p>
+      Get started on your dating journey by downloading the Lemon Tree app today! 
+      Click the button below to download the app for your device.
+    </p>
+    <a href="#" id="download-button"> <img src="pics/Download.gif" alt="Download GIF"></a>
+  </div>
+
+  <script>
+   
+    const downloadButton = document.getElementById('download-button');
+    downloadButton.addEventListener('click', function() {
+      alert('Lemon Tree app download link goes here!');
+    });
+  </script>
+</body>
+</html>

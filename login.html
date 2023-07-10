@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Date set Go Online</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background:transparent
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #0db912;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #888;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-group a {
+      color: #888;
+      text-decoration: none;
+    }
+
+    .form-group a:hover {
+      color: #4CAF50;
+    }
+
+    .password-toggle {
+      position: relative;
+      display: inline-block;
+    }
+
+    .password-toggle input[type="password"] {
+      padding-right: 30px;
+    }
+
+    .password-toggle .toggle-icon {
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    .about-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome to Date Set Go Online</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <div class="password-toggle">
+          <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
+          <span class="toggle-icon" onclick="togglePasswordVisibility()">&#x1f441;</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <button type="submit">Login</button>
+      </div>
+      <div class="form-group">
+        <a href="regestration.html">Sign Up</a>
+      </div>
+      <div class="form-group">
+        <a href="forgotpassword.html">Forgot Password?</a>
+      </div>
+    </form>
+
+    <div class="about-link">
+      <a href="about.html">About</a>
+    </div>
+  </div>
+
+  <script>
+    var backgroundImages = [
+      "file:///c%3A/Users/acer/Desktop/app%20website/pics/flower-729512_1280.jpg",
+    ];
+
+    function setRandomBackgroundImage() {
+      var randomIndex = Math.floor(Math.random() * backgroundImages.length);
+      var randomImage = backgroundImages[randomIndex];
+      document.body.style.backgroundImage = "url('" + randomImage + "')";
+    }
+
+    setRandomBackgroundImage()
+
+    function togglePasswordVisibility() {
+      var passwordInput = document.getElementById("password");
+      var toggleIcon = document.querySelector(".toggle-icon");
+
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        toggleIcon.innerHTML = "&#x1f440;";
+      } else {
+        passwordInput.type = "password";
+        toggleIcon.innerHTML = "&#x1f441;";
+      }
+    }
+
+    document.getElementById("loginForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+      window.location.href = "break.html";
+    });
+  </script>
+</body>
+</html>

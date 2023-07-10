@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Date Set Go. Online- Find Your Perfect Match</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      background-image: url("pics/Untitled design.gif");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #ff5a5f;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
+    section h3 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #ff5a5f;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e50004;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .feature img {
+      max-width: 100px;
+      margin-right: 20px;
+    }
+
+    .blog {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .blog img {
+      max-width: 100px;
+      margin-right: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+  <script>
+    // Smooth scrolling
+    window.addEventListener('DOMContentLoaded', () => {
+      const links = document.querySelectorAll('a[href^="#"]');
+      links.forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          const target = document.querySelector(link.getAttribute('href'));
+          target.scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Date Set Go.Online</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <h2>Find Your Perfect Match</h2>
+      <p>Join Date Set Go.Online and discover meaningful connections.</p>
+      <a href="registration.html" class="btn">Sign Up Now</a>
+      <p>Already a member?</p>
+      <a href="login.html" class="btn">Login Now</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h3>About Date Set Go</h3>
+      <p>Date Set Go is a modern and intuitive dating app that helps you find your perfect match. Our advanced matching algorithm takes into account your interests, preferences, and personality traits to connect you with like-minded individuals.</p>
+      <p>With Date Set Go, you can browse profiles, chat with potential matches, and find genuine connections. Whether you're looking for love, friendship, or companionship, Date Set Go is the perfect platform for you.</p>
+      <a href="#contact" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="container">
+      <h3>Features</h3>
+      <div class="feature">
+        <img src="feature1.png" alt="Feature 1">
+        <div>
+          <h4>Advanced Matching</h4>
+          <p>Our advanced matching algorithm ensures you are connected with compatible individuals based on your preferences and interests.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <img src="feature2.png" alt="Feature 2">
+        <div>
+          <h4>Secure and Private</h4>
+          <p>Your privacy is our top priority. Date Set Go uses industry-standard security measures to protect your personal information.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <img src="feature3.png" alt="Feature 3">
+        <div>
+          <h4>Real-Time Messaging</h4>
+          <p>Chat with potential matches in real-time to get to know them better and build meaningful connections.</p>
+        </div>
+      </div>
+      <a href="#contact" class="btn">See All Features</a>
+    </div>
+  </section>
+
+  <section id="blogs">
+    <div class="container">
+      <h3>Recent Blogs</h3>
+      <div class="blog">
+        <img src="blog1.png" alt="Blog 1">
+        <div>
+          <h4>10 Tips for a Successful First Date</h4>
+          <p>Read our expert advice on how to make your first date a memorable and successful experience.</p>
+          <a href="break.html" class="btn">Read More</a>
+        </div>
+      </div>
+      <div class="blog">
+        <img src="break.html" alt="Blog 2">
+        <div>
+          <h4>Navigating Online Dating: Dos and Don'ts</h4>
+          <p>Learn the dos and don'ts of online dating to enhance your chances of finding the perfect match.</p>
+          <a href="break.html" class="btn">Read More</a>
+        </div>
+      </div>
+      <a href="break.html" class="btn">View All Blogs</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h3>Contact Us</h3>
+      <p>If you have any questions or feedback, feel free to reach out to us.</p>
+      <form action="{{ url_for('contact') }}" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message" class="btn">
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Date Set Go Online. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
